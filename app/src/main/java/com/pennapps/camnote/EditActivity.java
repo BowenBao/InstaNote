@@ -118,8 +118,7 @@ public class EditActivity extends ActionBarActivity{
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_delete){
             inDB.deleteNote(noteID);
-            Intent intent = new Intent(getApplicationContext(),MainActivity.class);
-            startActivity(intent);
+            finish();
         }
 
         if (id == R.id.action_done) {
@@ -129,8 +128,7 @@ public class EditActivity extends ActionBarActivity{
             context_str = detail.getText().toString();
             inDB.updateNote(noteID,title_str,context_str,time_str,date_str,host_str,address_str,
                     picture_str,category_str);
-            Intent intent = new Intent(getApplicationContext(),MainActivity.class);
-            startActivity(intent);
+            finish();
         }
 
         return super.onOptionsItemSelected(item);

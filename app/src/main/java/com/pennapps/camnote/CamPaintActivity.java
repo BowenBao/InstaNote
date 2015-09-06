@@ -467,7 +467,7 @@ public class CamPaintActivity extends ActionBarActivity {
             // convert to grayscale
             magickImage.setGrayscale();
             // enhance stretch, constrast sharpen
-            result = magickImage.contrastImage(true);
+            // result = magickImage.contrastImage(true);
             // enhance
             magickImage = magickImage.enhanceImage();
             // normalize
