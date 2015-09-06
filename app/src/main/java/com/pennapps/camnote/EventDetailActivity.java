@@ -53,6 +53,7 @@ public class EventDetailActivity extends ActionBarActivity {
             dataBundle.putInt("id", noteID);
             Intent editIntent = new Intent(EventDetailActivity.this, EditActivity.class);
             editIntent.putExtras(dataBundle);
+            finish();
             startActivity(editIntent);
 
         } else if (id == R.id.action_share) {
