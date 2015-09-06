@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/bowen/work/android/SuperNotebook/CamNote/app/build/intermediates/exploded-aar/CamNote.libraries/Android-ImageMagick/unspecified/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="797be08c95e3d624c4d3d84dcef60efe21d11456">
+        <dex dex="/Users/bowen/work/android/SuperNotebook/CamNote/app/build/intermediates/pre-dexed/debug/classes-7700707c055eabd29ca79068ced47770cf6bc1b1.jar" />
+    </item>
+    <item
+        jar="/Users/bowen/work/android/SuperNotebook/CamNote/app/build/intermediates/exploded-aar/CamNote.libraries/tess-two/unspecified/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="f5a14add2222055c12e06a921c486f49123b432f">
+        <dex dex="/Users/bowen/work/android/SuperNotebook/CamNote/app/build/intermediates/pre-dexed/debug/classes-42f4e5f71d2f83e6d4344f59d033b17cf1b7fc61.jar" />
+    </item>
+
+</items>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/item_pic"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@android:color/darker_gray"/>
+
+    <TextView
+        android:id="@+id/item_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="50dp"
+        android:textStyle="bold"
+        android:textColor="@color/blue"
+        android:text="Fake Event Name"
+        android:gravity="center_vertical"
+        android:textSize="20sp"
+        android:layout_below="@+id/item_pic"
+        android:paddingTop="10dp"
+        android:paddingLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/item_date"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:gravity="center_vertical"
+        android:text="September 31, 2015"
+        android:layout_below="@id/item_name"
+        android:textStyle="italic"
+        android:paddingLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/item_location"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:gravity="center_vertical"
+        android:text="fake event location"
+        android:layout_below="@+id/item_date"
+        android:paddingLeft="20dp"/>
+
+    <ImageButton
+        android:id="@+id/map_button"
+        android:layout_width="30dp"
+        android:layout_height="35dp"
+        android:src="@mipmap/ic_action_map"
+        android:layout_below="@+id/item_date"
+        android:layout_toRightOf="@+id/item_location"
+        android:scaleType="fitCenter"
+        android:padding="2dp"/>
+
+    <TextView
+        android:id="@+id/item_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="(no description)"
+        android:layout_below="@+id/map_button"
+        android:paddingLeft="20dp"/>
+
+    <com.melnykov.fab.FloatingActionButton
+        android:id="@+id/star_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_star"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@id/item_pic"
+        android:layout_marginBottom="-30dp"
+        android:layout_marginRight="20dp"
+        fab:fab_colorNormal="@color/blue"
+        fab:fab_colorPressed="@color/pressed"
+        fab:fab_colorRipple="@color/ripple" />
+
+</RelativeLayout>
